@@ -8,4 +8,16 @@ feature 'ideas' do
       expect(page).to have_link 'Add an idea'
     end
   end
+
+  context 'ideas have been added' do
+  before do
+    Idea.create(name: 'Lions tour')
+  end
+
+  scenario 'display ideas' do
+    visit '/ideas'
+    expect(page).to have_content('Lions tour')
+    expect(page).not_to have_content('No ideas yet')
+  end
+end
 end

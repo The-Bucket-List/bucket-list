@@ -1,5 +1,14 @@
-
-
+<%if @ideas.any? %>
+  <ul>
+    <% @ideas.each do |idea|%>
+      <li>
+        <p><%= idea.name %></p>
+      </li>
+    <% end %>
+  </ul>
+<% else %>
 No ideas yet
 
 <a href="#" class="waves-effect waves-light btn">Add an idea</a>
+
+<% end %>
