@@ -333,3 +333,57 @@ Processing by IdeasController#index as HTML
   Rendered ideas/index.html.erb within layouts/application (1.1ms)
 Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
   [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (118.4ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (352.1ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE "ideas" ("id" serial primary key, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "description" text) 
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150601204216')
+  [1m[36m (0.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150601192259')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 21:42:32 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 228ms (Views: 217.5ms | ActiveRecord: 2.0ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lions tour"], ["created_at", "2015-06-01 20:42:32.303554"], ["updated_at", "2015-06-01 20:42:32.303554"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 21:42:32 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 21:42:32 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/ideas/new" for 127.0.0.1 at 2015-06-01 21:42:32 +0100
+Processing by IdeasController#new as HTML
+  Rendered ideas/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 28ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+Started POST "/ideas" for 127.0.0.1 at 2015-06-01 21:42:32 +0100
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"Lions tour"}, "commit"=>"Create Idea"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lions tour"], ["created_at", "2015-06-01 20:42:32.360301"], ["updated_at", "2015-06-01 20:42:32.360301"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 21:42:32 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
