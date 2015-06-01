@@ -2,7 +2,7 @@
   <ul>
     <% @ideas.each do |idea|%>
       <li>
-        <p><%= idea.name %></p>
+        <p><%= link_to idea.name, idea_path(idea) %></p>
       </li>
     <% end %>
   </ul>

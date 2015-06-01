@@ -31,4 +31,17 @@ feature 'ideas' do
       expect(current_path).to eq '/ideas'
     end
   end
+
+  context 'viewing ideas' do
+
+    let!(:lions_tour){Idea.create(name:'Lions tour')}
+
+    scenario 'lets a user view an idea' do
+     visit '/ideas'
+     click_link 'Lions tour'
+     expect(page).to have_content 'Lions tour'
+     expect(current_path).to eq "/ideas/#{lions_tour.id}"
+    end
+
+  end
 end

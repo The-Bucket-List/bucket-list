@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   get 'ideas' => 'ideas#index'
-  resource :ideas
+  resources :ideas
 end

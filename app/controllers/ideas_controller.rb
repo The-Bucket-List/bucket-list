@@ -16,4 +16,8 @@ class IdeasController < ApplicationController
   def idea_params
     params.require(:idea).permit(:name)
   end
+
+  def show
+    @idea = Idea.find(params[:id])
+  end
 end
