@@ -1,0 +1,8 @@
+  [1m[36m (102.9ms)[0m  [1mCREATE DATABASE "bucket_list_test" ENCODING = 'unicode'[0m
+PG::InternalError: ERROR:  checkpoint request failed
+HINT:  Consult recent messages in the server log for details.
+: CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (808.6ms)[0m  [1mCREATE DATABASE "bucket_list_test" ENCODING = 'unicode'[0m
+PG::InternalError: ERROR:  checkpoint request failed
+HINT:  Consult recent messages in the server log for details.
+: CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
