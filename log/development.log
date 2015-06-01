@@ -389,3 +389,717 @@ Started GET "/" for ::1 at 2015-06-01 16:16:19 +0100
 Processing by Rails::WelcomeController#index as HTML
   Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
 Completed 200 OK in 18ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-06-01 18:26:55 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 18ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for ::1 at 2015-06-01 18:27:01 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 1940ms (Views: 1939.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/ideas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/application.self-7f9dc80f91227554609eb3744a3d6fdb782eba25cc3cf20791302d6d08253482.css?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/dropdown.self-05e991da96ced36bd9653173888378f65b6cade8f06b0bd01a82dce19fcb8fab.js?body=1" for ::1 at 2015-06-01 18:27:03 +0100
+
+
+Started GET "/assets/materialize/components/color" for ::1 at 2015-06-01 18:27:03 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/materialize/components/color"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (83.1ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.1ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (105.2ms)
+
+
+Started GET "/assets/materialize/leanModal.self-4ee5e6f369fb8809cd850be0e815a133f208f0e619ce883b88ba2ab1954c6bcd.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/sideNav.self-0a2b7606eaddf3a98e615da8a241f8db596883d7810c72acc335abedcf2cad33.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/forms.self-0e528edbc7d5a38f40c142ff5169d39688efa5da138b036a4f98b3bf71b1d5ac.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/slider.self-8047d9785dc044a569f3d33dc4cab0f26d1def9eb463888bc8f81a5c24d9f8e3.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/buttons.self-dc2da0385351fed4f2895c2ecf5f5746f71f65cf5096a122f7c01d9f33a2cb15.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/transitions.self-28758faec2aa3ef49584eea3b19c9ccbaae067c2ae24a654cf3b5c894b009442.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize/character_counter.self-630d8bac686cb3d1b75d4dbd9b8910e97b1e9e14a9eb839ad4732eacee125daf.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-01 18:27:04 +0100
+
+
+Started GET "/ideas" for ::1 at 2015-06-01 18:28:21 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 124ms (Views: 124.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/ideas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/application.self-7f9dc80f91227554609eb3744a3d6fdb782eba25cc3cf20791302d6d08253482.css?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/components/color" for ::1 at 2015-06-01 18:28:22 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/materialize/components/color"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (40.9ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (91.1ms)
+
+
+Started GET "/assets/materialize/dropdown.self-05e991da96ced36bd9653173888378f65b6cade8f06b0bd01a82dce19fcb8fab.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/leanModal.self-4ee5e6f369fb8809cd850be0e815a133f208f0e619ce883b88ba2ab1954c6bcd.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/sideNav.self-0a2b7606eaddf3a98e615da8a241f8db596883d7810c72acc335abedcf2cad33.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/forms.self-0e528edbc7d5a38f40c142ff5169d39688efa5da138b036a4f98b3bf71b1d5ac.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/slider.self-8047d9785dc044a569f3d33dc4cab0f26d1def9eb463888bc8f81a5c24d9f8e3.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/buttons.self-dc2da0385351fed4f2895c2ecf5f5746f71f65cf5096a122f7c01d9f33a2cb15.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/transitions.self-28758faec2aa3ef49584eea3b19c9ccbaae067c2ae24a654cf3b5c894b009442.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/character_counter.self-630d8bac686cb3d1b75d4dbd9b8910e97b1e9e14a9eb839ad4732eacee125daf.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-01 18:28:22 +0100
+
+
+Started GET "/assets/materialize/components/color" for ::1 at 2015-06-01 18:28:28 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/materialize/components/color"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (90.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (55.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (127.6ms)
+
+
+Started GET "/" for ::1 at 2015-06-01 18:43:31 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (1.8ms)
+Completed 200 OK in 17ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ideas" for ::1 at 2015-06-01 18:43:37 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 378ms (Views: 377.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/materialize/components/color" for ::1 at 2015-06-01 18:43:37 +0100
+
+ActionController::RoutingError (No route matches [GET] "/assets/materialize/components/color"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.8ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (102.3ms)
+
+
+Started GET "/ideas" for ::1 at 2015-06-01 18:48:35 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 239ms (Views: 238.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/stylesheets/application.css" for ::1 at 2015-06-01 18:48:36 +0100
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (38.6ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (83.5ms)
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/dropdown.self-05e991da96ced36bd9653173888378f65b6cade8f06b0bd01a82dce19fcb8fab.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/leanModal.self-4ee5e6f369fb8809cd850be0e815a133f208f0e619ce883b88ba2ab1954c6bcd.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/sideNav.self-0a2b7606eaddf3a98e615da8a241f8db596883d7810c72acc335abedcf2cad33.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/forms.self-0e528edbc7d5a38f40c142ff5169d39688efa5da138b036a4f98b3bf71b1d5ac.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/slider.self-8047d9785dc044a569f3d33dc4cab0f26d1def9eb463888bc8f81a5c24d9f8e3.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/buttons.self-dc2da0385351fed4f2895c2ecf5f5746f71f65cf5096a122f7c01d9f33a2cb15.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/transitions.self-28758faec2aa3ef49584eea3b19c9ccbaae067c2ae24a654cf3b5c894b009442.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize/character_counter.self-630d8bac686cb3d1b75d4dbd9b8910e97b1e9e14a9eb839ad4732eacee125daf.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-01 18:48:36 +0100
+
+
+Started GET "/ideas" for ::1 at 2015-06-01 18:49:04 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 322ms (Views: 314.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/stylesheets/application.css" for ::1 at 2015-06-01 18:49:04 +0100
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.1) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.1) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.1) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.1) lib/rack/lock.rb:17:in `call'
+  rack (1.6.1) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.1) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/christopherward/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/christopherward/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (96.5ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-01 18:49:04 +0100
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/dropdown.self-05e991da96ced36bd9653173888378f65b6cade8f06b0bd01a82dce19fcb8fab.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/leanModal.self-4ee5e6f369fb8809cd850be0e815a133f208f0e619ce883b88ba2ab1954c6bcd.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/sideNav.self-0a2b7606eaddf3a98e615da8a241f8db596883d7810c72acc335abedcf2cad33.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/forms.self-0e528edbc7d5a38f40c142ff5169d39688efa5da138b036a4f98b3bf71b1d5ac.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/slider.self-8047d9785dc044a569f3d33dc4cab0f26d1def9eb463888bc8f81a5c24d9f8e3.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/buttons.self-dc2da0385351fed4f2895c2ecf5f5746f71f65cf5096a122f7c01d9f33a2cb15.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/transitions.self-28758faec2aa3ef49584eea3b19c9ccbaae067c2ae24a654cf3b5c894b009442.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize/character_counter.self-630d8bac686cb3d1b75d4dbd9b8910e97b1e9e14a9eb839ad4732eacee125daf.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-06-01 18:49:05 +0100

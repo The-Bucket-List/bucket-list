@@ -1,0 +1,16 @@
+{
+  "name": "bucket-list",
+  "version": "1.0.0",
+  "homepage": "https://github.com/The-Bucket-List/bucket-list",
+  "authors": [
+    "wardymate <chriswarddev@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
