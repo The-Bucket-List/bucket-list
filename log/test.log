@@ -6,3 +6,50 @@ HINT:  Consult recent messages in the server log for details.
 PG::InternalError: ERROR:  checkpoint request failed
 HINT:  Consult recent messages in the server log for details.
 : CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (352.3ms)[0m  [1mCREATE DATABASE "bucket_list_test" ENCODING = 'unicode'[0m
+  [1m[36m (120.2ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (237.4ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:09:48 +0100
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (125.9ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (237.8ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:10:50 +0100
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (117.4ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (321.3ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:12:50 +0100
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (114.5ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (235.7ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:13:20 +0100
+Processing by IdeasController#index as HTML
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (114.3ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (235.7ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:13:48 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 1429ms (Views: 1420.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (115.3ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (235.6ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:16:50 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 139ms (Views: 131.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (111.9ms)[0m  [1mDROP DATABASE IF EXISTS "bucket_list_test"[0m
+  [1m[35m (236.2ms)[0m  CREATE DATABASE "bucket_list_test" ENCODING = 'unicode'
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-01 18:17:08 +0100
+Processing by IdeasController#index as HTML
+  Rendered ideas/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 150ms (Views: 140.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
