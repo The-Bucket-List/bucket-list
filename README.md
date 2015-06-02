@@ -5,13 +5,17 @@ A simple web app for a group of friends to securely log in and view ideas for bu
 ### Installation
 
 You need [node.js](http://nodejs.org) installed globally:
+You also need [Postgres](http://www.postgresql.org/) installed
 
 ```sh
 $ git clone https://github.com/The-Bucket-List/bucket-list.git
 $ cd bucket-list
 $ npm install
-$ bower install
+$ node_modules/bower/bin/bower install
 $ bundle install
+$ rake db:create
+$ rake db:migrate
+$ rails s
 ```
 
 visit [http://localhost:3000](http://localhost:3000)
