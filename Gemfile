@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'acts_as_votable', '~> 0.10.0'
 gem 'devise'
 gem 'materialize-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -45,6 +46,7 @@ group :development, :test do
 end
 
 group :test do
+  gem 'launchy'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'rspec-collection_matchers'

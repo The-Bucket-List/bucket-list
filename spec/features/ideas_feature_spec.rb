@@ -63,6 +63,7 @@ feature 'ideas' do
     before {Idea.create name: 'Lions tour'}
 
     scenario 'let a user edit an idea' do
+      user_one_sign_up
       visit '/ideas'
       click_link 'Lions tour'
       click_link 'Edit'
@@ -78,6 +79,7 @@ feature 'ideas' do
     before {Idea.create name: 'Lions tour'}
 
     scenario 'removes an idea when a user clicks a delete link' do
+      user_one_sign_up
       visit '/ideas'
       click_link 'Lions tour'
       click_link 'Delete'

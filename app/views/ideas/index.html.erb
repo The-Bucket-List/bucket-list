@@ -3,6 +3,7 @@
     <% @ideas.each do |idea|%>
       <li>
         <p><%= link_to idea.name, idea_path(idea) %></p>
+        <i class = "tiny mdi-action-thumb-up">0</i><i class = "tiny mdi-action-thumb-down">0</i>
       </li>
     <% end %>
   </ul>
