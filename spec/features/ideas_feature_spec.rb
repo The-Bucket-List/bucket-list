@@ -57,6 +57,18 @@ feature 'ideas' do
       expect(page).to have_content 'Lions tour to New Zealand'
       expect(current_path).to eq '/ideas'
     end
+  end
 
+  context 'deleting ideas' do
+
+    before {Idea.create name: 'Lions tour'}
+
+    scenario 'removes an idea when a user clicks a delete link' do
+      visit '/ideas'
+      click_link 'Lions tour'
+      click_link 'Delete'
+      expect(page).not_to have_content 'Lions tour'
+      expect(page).to have_content 'Idea deleted successfully'
+    end
   end
 end

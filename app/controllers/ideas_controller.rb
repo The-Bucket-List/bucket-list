@@ -30,4 +30,11 @@ class IdeasController < ApplicationController
     @idea.update(idea_params)
     redirect_to '/ideas'
   end
+
+  def destroy
+    @idea = Idea.find(params[:id])
+    @idea.destroy
+    flash[:notice] = 'Idea deleted successfully'
+    redirect_to '/ideas'
+  end
 end
