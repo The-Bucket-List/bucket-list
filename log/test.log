@@ -3336,3 +3336,324 @@ Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms)
   [1m[35m (0.1ms)[0m  ROLLBACK
   [1m[36m (0.1ms)[0m  [1mBEGIN[0m
   [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:53 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 176ms (Views: 167.2ms | ActiveRecord: 1.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:36:54.081628"], ["updated_at", "2015-06-02 06:36:54.081628"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.3ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms)
+Started GET "/ideas/new" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#new as HTML
+  Rendered ideas/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+Started POST "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"Lions tour"}, "commit"=>"Create Idea"}
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:36:54.130838"], ["updated_at", "2015-06-02 06:36:54.130838"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.7ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/ideas/new" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#new as HTML
+  Rendered ideas/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+Started POST "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"kf"}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  Rendered ideas/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:36:54.176493"], ["updated_at", "2015-06-02 06:36:54.176493"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms)
+Started GET "/ideas/125" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"125"}
+  [1m[36mIdea Load (0.4ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 125]]
+  Rendered ideas/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 3.0ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:36:54.206968"], ["updated_at", "2015-06-02 06:36:54.206968"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+Started GET "/ideas/126" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"126"}
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 126]]
+  Rendered ideas/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+Started GET "/ideas/126/edit" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"126"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1  [["id", 126]]
+  Rendered ideas/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Started PATCH "/ideas/126" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"Lions tour to New Zealand"}, "commit"=>"Update Idea", "id"=>"126"}
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 126]]
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "ideas" SET "name" = $1, "updated_at" = $2 WHERE "ideas"."id" = $3[0m  [["name", "Lions tour to New Zealand"], ["updated_at", "2015-06-02 06:36:54.229925"], ["id", 126]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lions tour"], ["created_at", "2015-06-02 06:36:54.239974"], ["updated_at", "2015-06-02 06:36:54.239974"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+Started GET "/ideas/127" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"127"}
+  [1m[35mIdea Load (0.9ms)[0m  SELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1  [["id", 127]]
+  Rendered ideas/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.9ms)
+Started DELETE "/ideas/127" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#destroy as HTML
+  Parameters: {"id"=>"127"}
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 127]]
+  [1m[35m (0.3ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "ideas" WHERE "ideas"."id" = $1[0m  [["id", 127]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 2ms (ActiveRecord: 0.7ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:36:54 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions Tour"], ["created_at", "2015-06-02 06:36:54.266494"], ["updated_at", "2015-06-02 06:36:54.266494"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 160ms (Views: 151.4ms | ActiveRecord: 0.9ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mIdea Exists (24.9ms)[0m  [1mSELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions tour' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lions tour"], ["created_at", "2015-06-02 06:37:16.341591"], ["updated_at", "2015-06-02 06:37:16.341591"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/ideas/new" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#new as HTML
+  Rendered ideas/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 14ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+Started POST "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"Lions tour"}, "commit"=>"Create Idea"}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mIdea Exists (0.2ms)[0m  SELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions tour' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:37:16.383470"], ["updated_at", "2015-06-02 06:37:16.383470"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/ideas/new" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#new as HTML
+  Rendered ideas/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+Started POST "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#create as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"kf"}, "commit"=>"Create Idea"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mIdea Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'kf' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  Rendered ideas/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 3.6ms | ActiveRecord: 0.5ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mIdea Exists (0.4ms)[0m  SELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions tour' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:37:16.424609"], ["updated_at", "2015-06-02 06:37:16.424609"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms)
+Started GET "/ideas/131" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"131"}
+  [1m[36mIdea Load (0.6ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 131]]
+  Rendered ideas/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 6.8ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mIdea Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions tour' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["name", "Lions tour"], ["created_at", "2015-06-02 06:37:16.457178"], ["updated_at", "2015-06-02 06:37:16.457178"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.1ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms)
+Started GET "/ideas/132" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"132"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1  [["id", 132]]
+  Rendered ideas/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/ideas/132/edit" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#edit as HTML
+  Parameters: {"id"=>"132"}
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 132]]
+  Rendered ideas/edit.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Started PATCH "/ideas/132" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#update as HTML
+  Parameters: {"utf8"=>"✓", "idea"=>{"name"=>"Lions tour to New Zealand"}, "commit"=>"Update Idea", "id"=>"132"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1  [["id", 132]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mIdea Exists (1.4ms)[0m  SELECT  1 AS one FROM "ideas" WHERE ("ideas"."name" = 'Lions tour to New Zealand' AND "ideas"."id" != 132) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "ideas" SET "name" = $1, "updated_at" = $2 WHERE "ideas"."id" = $3[0m  [["name", "Lions tour to New Zealand"], ["updated_at", "2015-06-02 06:37:16.491194"], ["id", 132]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.1ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mIdea Exists (0.2ms)[0m  SELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions tour' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions tour"], ["created_at", "2015-06-02 06:37:16.503226"], ["updated_at", "2015-06-02 06:37:16.503226"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "ideas"[0m
+  [1m[35mIdea Load (0.2ms)[0m  SELECT "ideas".* FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+Started GET "/ideas/133" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"133"}
+  [1m[36mIdea Load (0.3ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 133]]
+  Rendered ideas/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+Started DELETE "/ideas/133" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#destroy as HTML
+  Parameters: {"id"=>"133"}
+  [1m[35mIdea Load (0.2ms)[0m  SELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1  [["id", 133]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "ideas" WHERE "ideas"."id" = $1  [["id", 133]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/ideas
+Completed 302 Found in 2ms (ActiveRecord: 0.5ms)
+Started GET "/ideas" for 127.0.0.1 at 2015-06-02 07:37:16 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "ideas"
+  Rendered ideas/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mIdea Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'kf' LIMIT 1[0m
+  [1m[35mIdea Exists (0.2ms)[0m  SELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'kf' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mIdea Exists (0.2ms)[0m  SELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions Tour' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "ideas" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Lions Tour"], ["created_at", "2015-06-02 06:37:16.531875"], ["updated_at", "2015-06-02 06:37:16.531875"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mIdea Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "ideas" WHERE "ideas"."name" = 'Lions Tour' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  ROLLBACK

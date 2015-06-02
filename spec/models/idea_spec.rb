@@ -8,4 +8,10 @@ describe Idea, type: :model do
     expect(idea).not_to be_valid
   end
 
+  it 'is not valid unless it has a unique name' do
+    Idea.create(name: 'Lions Tour')
+    idea = Idea.new(name: 'Lions Tour')
+    expect(idea).to have(1).error_on(:name)
+  end
+
 end
