@@ -9,8 +9,12 @@ class IdeasController < ApplicationController
   end
 
   def create
-    Idea.create(idea_params)
-    redirect_to '/ideas'
+    @idea = Idea.new(idea_params)
+    if @idea.save
+      redirect_to '/ideas'
+    else
+      render 'new'
+    end
   end
 
   def idea_params

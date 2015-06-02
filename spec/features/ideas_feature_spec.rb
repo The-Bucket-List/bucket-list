@@ -30,6 +30,17 @@ feature 'ideas' do
       expect(page).to have_content 'Lions tour'
       expect(current_path).to eq '/ideas'
     end
+
+    context 'an invalid idea' do
+      it 'does not let you submit a name that is too short' do
+        visit '/ideas'
+        click_link 'Add an idea'
+        fill_in 'Name', with: 'kf'
+        click_button 'Create Idea'
+        expect(page).not_to have_css 'h2', text: 'kf'
+        expect(page).to have_content 'error'
+      end
+    end
   end
 
   context 'viewing ideas' do
