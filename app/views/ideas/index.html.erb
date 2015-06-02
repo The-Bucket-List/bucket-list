@@ -10,5 +10,6 @@
 No ideas yet
 
 <% end %>
-
-<a href="/ideas/new" class="waves-effect waves-light btn">Add an idea</a>
+<% if user_signed_in? %>
+  <a href="/ideas/new" class="waves-effect waves-light btn">Add an idea</a>
+<% end %>

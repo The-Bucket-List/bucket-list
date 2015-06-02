@@ -1,5 +1,7 @@
 class IdeasController < ApplicationController
 
+  before_action :authenticate_user!, :except => [:index, :show]
+
   def index
     @ideas = Idea.all
   end

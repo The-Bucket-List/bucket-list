@@ -3,6 +3,7 @@ require 'rails_helper'
 feature 'ideas' do
   context 'no ideas have been added' do
     scenario 'should display a prompt to add a new idea' do
+      user_one_sign_up
       visit 'ideas'
       expect(page).to have_content 'No ideas yet'
       expect(page).to have_link 'Add an idea'
@@ -23,6 +24,7 @@ feature 'ideas' do
 
   context 'creating ideas' do
     scenario 'prompts user to fill out a form, then displays the new idea' do
+      user_one_sign_up
       visit '/ideas'
       click_link 'Add an idea'
       fill_in 'Name', with: 'Lions tour'
@@ -33,6 +35,7 @@ feature 'ideas' do
 
     context 'an invalid idea' do
       it 'does not let you submit a name that is too short' do
+        user_one_sign_up
         visit '/ideas'
         click_link 'Add an idea'
         fill_in 'Name', with: 'kf'

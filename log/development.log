@@ -1984,3 +1984,294 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 
+
+
+Started GET "/ideas" for ::1 at 2015-06-02 08:04:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by IdeasController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 435ms (Views: 421.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.self-6a2e1f6b95aa2499cc66f77e6a54c035927ca7a965ed69fad1d38398e70fcf26.css?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/dropdown.self-05e991da96ced36bd9653173888378f65b6cade8f06b0bd01a82dce19fcb8fab.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/leanModal.self-4ee5e6f369fb8809cd850be0e815a133f208f0e619ce883b88ba2ab1954c6bcd.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/sideNav.self-0a2b7606eaddf3a98e615da8a241f8db596883d7810c72acc335abedcf2cad33.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/forms.self-0e528edbc7d5a38f40c142ff5169d39688efa5da138b036a4f98b3bf71b1d5ac.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/slider.self-8047d9785dc044a569f3d33dc4cab0f26d1def9eb463888bc8f81a5c24d9f8e3.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/buttons.self-dc2da0385351fed4f2895c2ecf5f5746f71f65cf5096a122f7c01d9f33a2cb15.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/transitions.self-28758faec2aa3ef49584eea3b19c9ccbaae067c2ae24a654cf3b5c894b009442.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize/character_counter.self-630d8bac686cb3d1b75d4dbd9b8910e97b1e9e14a9eb839ad4732eacee125daf.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-06-02 08:04:30 +0100
+
+
+Started GET "/ideas" for ::1 at 2015-06-02 08:14:59 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  Rendered ideas/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 203ms (Views: 202.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-6a2e1f6b95aa2499cc66f77e6a54c035927ca7a965ed69fad1d38398e70fcf26.css?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/velocity.min.self-b01240ce1811a86e98a242cf1710553d1db34655f36b1e4ed745a7dc125db0ca.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/hammer.min.self-bf8bdb0953b1a135f96716e362e1f7a8e64168c914fa77ca31973bb70e57a731.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/jquery.easing.1.3.self-0170bc905fbddc075a56bdccce1be6a58f3713a14137b607ba9bd9f96fd7835f.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/animation.self-a1028b0bcf2e26331bedf7b90e81103f0707e69fdec488aa951de94b51987767.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/jquery.hammer.self-73fd69102f356b9abfc9ee242b19895f62454f42cfcfa1f066be71d2c8f41c7a.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/global.self-6278d27c18237cf0b6fcd96a6bf27f58369de2c4d26bcb45ac9c49a50c0ad80a.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/collapsible.self-bef6d527d6d38fc450d40f0e2733a1ccefc1817d34e041f69891c11b22642772.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/dropdown.self-05e991da96ced36bd9653173888378f65b6cade8f06b0bd01a82dce19fcb8fab.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/leanModal.self-4ee5e6f369fb8809cd850be0e815a133f208f0e619ce883b88ba2ab1954c6bcd.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/materialbox.self-697b2e84aa96b92b704f270bccaf72f5b0839012265d47e20695d6c7e54041b1.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/parallax.self-7ac34f0f3dcef83deee116ea473a2770cec13e07c8e0dcce08cc2372bbe295d3.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/tabs.self-8b03a508bef52283d6f302037fd672ca9d379a1901d72baa59418484071b8cbf.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/tooltip.self-cd3548bc6934ec5af60f0e60c1146ebfeafac763b904e6f896119f1cd5c52a6e.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/waves.self-26e9b9cfaa9ccbc292ed510f654bd279d69695f5337a14c9800b36e92f96735b.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/toasts.self-e6883cac22ad22f88149b85c3e9efdee36fba56008586f550e6cb647386e0407.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/sideNav.self-0a2b7606eaddf3a98e615da8a241f8db596883d7810c72acc335abedcf2cad33.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/scrollspy.self-9bd8d701ac90c813a0d051ab4943150bdb536d863646d8b349c42a88edb31cf8.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/forms.self-0e528edbc7d5a38f40c142ff5169d39688efa5da138b036a4f98b3bf71b1d5ac.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/slider.self-8047d9785dc044a569f3d33dc4cab0f26d1def9eb463888bc8f81a5c24d9f8e3.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/cards.self-e21f14b1b3c6987af4297d4da8ff5de59296ff2e37e2d062ec0c6d2dff4c8001.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/pushpin.self-3e487290a48f23142c992c158b45cbd0be9c83de7c23abbb33b195954d1883cd.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/buttons.self-dc2da0385351fed4f2895c2ecf5f5746f71f65cf5096a122f7c01d9f33a2cb15.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/transitions.self-28758faec2aa3ef49584eea3b19c9ccbaae067c2ae24a654cf3b5c894b009442.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/scrollFire.self-f18a16d9bb0e0177e01b0326e41c601a6a85bb6a00dbca34593f88a6c89770d2.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.self-f7869dc9881d3874917e009ea6e30d68817b1bd1247665fb653e0f87393fb60f.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/date_picker/picker.date.self-5924b278beda2df8570f137f72b37e2d0f516acbc11a0994d1abb74380f078ef.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize/character_counter.self-630d8bac686cb3d1b75d4dbd9b8910e97b1e9e14a9eb839ad4732eacee125daf.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/materialize-sprockets.self-a66b8b29b6eb6d8d6ac137234cb5d8f49f9bb4507a678c7f3ff97659a36ae3b0.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/underscore/underscore.self-4b328e42c558197d5b99d7727cfcc60bac9763fad660651230e8baf93f6067ed.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/ideas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/assets/roboto/Roboto-Regular-b5c9c23bd12593523a46d79dd0aee80e3226bbde4c9ac05fc30a95e2c1510de0.woff2" for ::1 at 2015-06-02 08:14:59 +0100
+
+
+Started GET "/users/sign_in" for ::1 at 2015-06-02 08:15:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 181ms (Views: 170.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-06-02 08:15:06 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7+dlvZr6N4VVLOk5EC+WYB5QlLe0+eBgWJPRQp9NdYaCQIHGwvxKQnavEuGAsgqvUV00KxatZ6vYexgCdDiLrA==", "user"=>{"email"=>"tester@tester.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (9.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "tester@tester.com"]]
+Completed 401 Unauthorized in 31ms (ActiveRecord: 9.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7+dlvZr6N4VVLOk5EC+WYB5QlLe0+eBgWJPRQp9NdYaCQIHGwvxKQnavEuGAsgqvUV00KxatZ6vYexgCdDiLrA==", "user"=>{"email"=>"tester@tester.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 256ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-06-02 08:15:09 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 277ms (Views: 273.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-06-02 08:15:21 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h21mvTX44PDMaJVSQ11LiU2sv+a5Xadg/t36/o8digLqyoLGbf6dN+/rborTwNdGAqEfehsJIKt+NTO+ZGh0KA==", "user"=>{"email"=>"tester@tester.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'tester@tester.com' LIMIT 1
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "tester@tester.com"], ["encrypted_password", "$2a$10$NELGYTVuHnd2A/sHiqfrFuhQJaJKtl2pqipKIW2E65SPV4o7YoGyW"], ["created_at", "2015-06-02 07:15:21.714059"], ["updated_at", "2015-06-02 07:15:21.714059"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-06-02 07:15:21.720635"], ["current_sign_in_at", "2015-06-02 07:15:21.720635"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-06-02 07:15:21.721708"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 118ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2015-06-02 08:15:21 +0100
+Processing by IdeasController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "ideas"
+  [1m[36mIdea Load (0.7ms)[0m  [1mSELECT "ideas".* FROM "ideas"[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered ideas/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 182ms (Views: 178.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/ideas/1" for ::1 at 2015-06-02 08:15:26 +0100
+Processing by IdeasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIdea Load (0.2ms)[0m  [1mSELECT  "ideas".* FROM "ideas" WHERE "ideas"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered ideas/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 155ms (Views: 151.3ms | ActiveRecord: 0.6ms)
