@@ -1,7 +1,17 @@
 module LikesHelper
   def previous_like?
-    @likes.select {|like| like.user == current_user}.length == 1
+    previous_like.length == 1
   end
+
+  def previous_like
+    @likes.select {|like| like.user == current_user}
+  end
+
+  def previous_like_value
+    previous_like? ? previous_like.first.value : 0
+  end
+
+
 
   def new_plus_like
     @like = Like.new
