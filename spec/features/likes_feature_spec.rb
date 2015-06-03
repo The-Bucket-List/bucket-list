@@ -11,12 +11,22 @@ feature 'likes' do
   end
 
   context 'liking other users ideas' do
-    scenario 'should increase the like count' do
+    before do
       user_one_sign_up
       add_idea
       user_sign_out
       user_two_sign_up
+    end
+
+    scenario 'should increase the like count' do
       visit('/ideas')
+      click_link 'like'
+      expect(page).to have_content '1'
+    end
+
+    scenario 'should only increase the like count once' do
+      visit('/ideas')
+      click_link 'like'
       click_link 'like'
       expect(page).to have_content '1'
     end
