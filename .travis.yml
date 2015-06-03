@@ -10,3 +10,8 @@ script:
   - bundle exec bin/rake db:create
   - bundle exec bin/rake db:migrate
   - bundle exec rspec spec
+
+deploy:
+  provider: heroku
+  api_key: 50704842-ce26-4d6b-a8a0-d2db93c9f3a0
+  app: young-reaches-5564
