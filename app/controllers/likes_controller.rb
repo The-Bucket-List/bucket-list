@@ -5,10 +5,7 @@ class LikesController < ApplicationController
     @idea = Idea.find(params[:idea_id])
     @likes = Like.where("idea_id = #{@idea.id}")
     unless previous_like?
-      @like = Like.new
-      @like.user_id = current_user.id
-      @like.idea = @idea
-      @like.save
+      new_plus_like
     end
     redirect_to :back
   end

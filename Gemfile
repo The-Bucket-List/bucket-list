@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby "2.2.0"
 
 gem "bower"
-gem 'rails_12factor'
+# gem 'rails_12factor'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'devise'
 gem 'materialize-sass'

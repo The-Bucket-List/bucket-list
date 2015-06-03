@@ -25,7 +25,7 @@ describe Idea, type: :model do
   it 'keeps track of the number of likes' do
     idea = Idea.create(name: 'Lions Tour')
     user = User.create(email: 'test@test.com', password: 'password')
-    like = Like.create(user_id: user.id, idea_id: idea.id)
+    like = Like.create(user_id: user.id, idea_id: idea.id, value: 1)
     expect(idea.likes_number).to eq 1
   end
 
