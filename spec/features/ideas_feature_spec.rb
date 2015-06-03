@@ -25,10 +25,7 @@ feature 'ideas' do
   context 'creating ideas' do
     scenario 'prompts user to fill out a form, then displays the new idea' do
       user_one_sign_up
-      visit '/ideas'
-      click_link 'Add an idea'
-      fill_in 'Name', with: 'Lions tour'
-      click_button 'Create Idea'
+      add_idea
       expect(page).to have_content 'Lions tour'
       expect(current_path).to eq '/ideas'
     end

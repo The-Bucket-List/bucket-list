@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'ideas#index'
   get 'ideas' => 'ideas#index'
   resources :ideas
+  resources :likes
 end
