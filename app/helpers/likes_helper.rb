@@ -11,8 +11,6 @@ module LikesHelper
     previous_like? ? previous_like.first.value : 0
   end
 
-
-
   def new_plus_like
     @like = Like.new
     @like.user_id = current_user.id
