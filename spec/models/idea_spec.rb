@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Idea, type: :model do
 
@@ -15,6 +15,18 @@ describe Idea, type: :model do
     Idea.create(name: 'Lions Tour')
     idea = Idea.new(name: 'Lions Tour')
     expect(idea).to have(1).error_on(:name)
+  end
+
+  it 'has a no likes when created' do
+    idea = Idea.create(name: 'Lions Tour')
+    expect(idea.likes_number).to eq 0
+  end
+
+  it 'keeps track of the number of likes' do
+    idea = Idea.create(name: 'Lions Tour')
+    user = User.create(email: 'test@test.com', password: 'password')
+    like = Like.create(user_id: user.id, idea_id: idea.id)
+    expect(idea.likes_number).to eq 1
   end
 
 end

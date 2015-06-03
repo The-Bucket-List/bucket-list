@@ -3,7 +3,7 @@
     <% @ideas.each do |idea|%>
       <li>
         <p><%= link_to idea.name, idea_path(idea) %></p>
-        <i class = "tiny mdi-action-thumb-up"></i><%= link_to 'like', new_like_path({"idea_id" =>"#{idea.id}"}) %><i class = "tiny mdi-action-thumb-down">0</i>
+        <i class = "tiny mdi-action-thumb-up"><%= idea.likes_number %></i><%= link_to 'like', new_like_path({"idea_id" =>"#{idea.id}"}) %><i class = "tiny mdi-action-thumb-down">0</i>
       </li>
     <% end %>
   </ul>
