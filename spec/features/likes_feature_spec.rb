@@ -30,4 +30,18 @@ feature 'likes' do
       expect(page).to have_content '1'
     end
   end
+
+  context 'disliking other users ideas' do
+    before do
+      user_one_sign_up
+      add_idea
+      user_sign_out
+      user_two_sign_up
+    end
+    scenario 'should decrease the like count by 1' do
+      visit('/ideas')
+      click_link 'dislike'
+      expect(page).to have_content '-1'
+    end
+  end
 end

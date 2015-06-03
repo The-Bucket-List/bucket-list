@@ -4,6 +4,7 @@ class Idea < ActiveRecord::Base
   validates :name, length: {minimum: 3}, uniqueness: true
 
   def likes_number
-    Like.where("idea_id = #{self.id}").map{|like|like.value}.inject(:+) || 0
+    likes = Like.where("idea_id = #{self.id}").reject{|like|like.value == nil}.map{|like|like.value }.inject(:+)
+    likes == nil ? 0 : likes
   end
 end

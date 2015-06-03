@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root to: 'ideas#index'
   get 'ideas' => 'ideas#index'
   resources :ideas
+  get 'likes/dislike', to: 'likes#dislike', as: :dislike
   resources :likes
+
 end
