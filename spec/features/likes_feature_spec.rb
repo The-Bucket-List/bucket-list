@@ -17,7 +17,6 @@ feature 'likes' do
       user_sign_out
       user_two_sign_up
     end
-
     scenario 'should increase the like count' do
       visit('/ideas')
       click_link 'like'
