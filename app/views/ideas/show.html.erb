@@ -1,4 +1,11 @@
 <p><%= @idea.name %></p>
 <p><%= @idea.description %></p>
+
+<div class="comments">
+  <h5>Comments</h5>
+  <%= render :partial => 'comments/form', :locals => { :comment => @new_comment } %><br>
+  <%= render :partial => 'comments/comment', :collection => @comments, :as => :comment %>
+</div>
+
 <%= link_to "Edit", edit_idea_path(@idea) %>
 <%= link_to "Delete", idea_path(@idea), method: :delete %>

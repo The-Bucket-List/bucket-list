@@ -20,11 +20,13 @@ class IdeasController < ApplicationController
   end
 
   def idea_params
-    params.require(:idea).permit(:name)
+    params.require(:idea).permit(:name, :description)
   end
 
   def show
     @idea = Idea.find(params[:id])
+    @comments = @idea.comment_threads.order('created_at desc')
+    @new_comment = Comment.build_from(@idea, current_user.id, "")
   end
 
   def edit

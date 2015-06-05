@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 ruby "2.2.0"
 
+gem 'acts_as_commentable_with_threading'
+gem 'simple_form'
 gem "bower"
 # gem 'rails_12factor'
-gem 'acts_as_votable', '~> 0.10.0'
 gem 'devise'
 gem 'materialize-sass'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
