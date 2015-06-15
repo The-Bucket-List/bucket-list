@@ -48,6 +48,7 @@ feature 'ideas' do
     let!(:lions_tour){Idea.create(name:'Lions tour')}
 
     scenario 'lets a user view an idea' do
+     user_one_sign_up
      visit '/ideas'
      click_link 'Lions tour'
      expect(page).to have_content 'Lions tour'
