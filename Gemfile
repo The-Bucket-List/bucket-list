@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
+ruby "2.2.0"
 
+gem 'factory_girl'
 gem 'acts_as_commentable_with_threading'
 gem 'simple_form'
 gem "bower"
