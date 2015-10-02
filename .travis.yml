@@ -1,17 +1,21 @@
-rvm: '2.2.0'
-
+rvm: 2.2.0
 before_script:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
-  - npm install -g bower
-  - bower install
-
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+- npm install -g bower
+- bower install
 script:
-  - bundle exec bin/rake db:create
-  - bundle exec bin/rake db:migrate
-  - bundle exec rspec spec
-
+- bundle exec bin/rake db:create
+- bundle exec bin/rake db:migrate
+- bundle exec rspec spec
 deploy:
   provider: heroku
-  api_key: 50704842-ce26-4d6b-a8a0-d2db93c9f3a0
-  app: young-reaches-5564
+  api_key:
+    secure: U2UfejpRTBbNIr8yRUNGiS8U/LqY9zJ0D+B7BS/GBqT1aAlT2y7SrzWGN+6rHneBhytMpv9cQkVIiHirEkkhGRxTvVcNnI4fvhK6K0xdnLWmzz7lsQRad9zqJymI8K45g65UIuUvxup4V/a7ZxTtgCHTNkkJ395czpGfgdP1MTXqBaZXAs7TSyWjDiQBUMGzw+puWUO0qaWsVWnB7T5Q9AlAS6/9bqxjoQimNXKChv+gGe0aslmm2IUL7CJewoighje0uCzhZesYwdy/bTMnFQILDWOUGcoUTA4oho1hYKxK71Lfr5Hq/VlgmZltHDBxeEOVWEQgT7GtqSPx9p91PmL2dLjsdCjAVXqqE4FNXIlkbVl2OxQCMEFj8BWuwh3zXT3HhC307B9hqOTKxGQXudKVOLnC7dNmKdnac+MSSu9vR/RuN6HPkWouFu69UKkpVwiu6hjRpUg47mlVWLl9/4c7G2nLovqjuCtTOVIf24UwcnnRG1vq9RzNZrHwq1R+0yjTPWjhvEl4gT0soGrH+vj1AuNJzERlLzjP1P5jHcH4RUHSRM5dsrPP8coDXbBRct/StgyE49C2wDMtyLy7Odq4pSwCIhp+EXs5zJO6C9QEp2N5zK9fUdkYKl/6ww6eORfqTCaj3cDmQYp0xYOrHrI7xcNzwB6aaioO4tajuw0=
+  app: goats-bucket-list
+  on:
+    repo: The-Bucket-List/bucket-lit
+  run:
+    - "rake db:migrate"
+    - restart
+    - "rake cleanup"
