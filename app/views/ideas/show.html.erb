@@ -1,6 +1,18 @@
 <p><%= @idea.name %></p>
 <p><%= @idea.description %></p>
 
+<ul class="collection">
+  <% if @options.any? %>
+    <% @options.each do |option| %>
+      <li class="collection-item"><div><%= option.name %></div><div><%= option.description %></div></li>
+    <% end %>
+  <% else %>
+    <li class="collection-item">No options yet </li>
+  <% end %>
+    <li class="collection-item"><a href="#">Add an option</a></ul>
+</ul>
+
+
 <div class="comments">
   <h5>Comments</h5>
   <%= render :partial => 'comments/form', :locals => { :comment => @new_comment } %><br>

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'ideas' => 'ideas#index'
   resources :ideas
+  resources :options
 
   get 'likes/dislike', to: 'likes#dislike', as: :dislike
   resources :likes

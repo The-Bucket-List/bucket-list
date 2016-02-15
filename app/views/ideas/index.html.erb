@@ -1,7 +1,7 @@
 <%if @ideas.any? %>
-  <ul>
+  <ul class="collection">
     <% @ideas.each do |idea|%>
-      <li>
+      <li class='collection-item'>
         <p><%= link_to idea.name, idea_path(idea) %></p>
         <p><%= idea.description %></p>
         <%= idea.likes_number %>
